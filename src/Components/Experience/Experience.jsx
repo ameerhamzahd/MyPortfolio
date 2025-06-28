@@ -32,7 +32,7 @@ const Experience = () => {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold mb-4">Experience</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold mb-4 font-special">Experience</h2>
                     <div className="w-24 h-1 bg-accent mx-auto mb-6"></div>
                 </motion.div>
 

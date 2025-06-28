@@ -25,7 +25,7 @@ const AboutMe = () => {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold mb-4 font-special">About Me</h2>
                     <div className="w-24 h-1 bg-accent mx-auto"></div>
                 </motion.div>
 

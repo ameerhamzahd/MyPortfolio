@@ -21,7 +21,7 @@ const Navbar = () => {
     { name: "Education", href: "#education" },
     { name: "Experience", href: "#experience" },
     { name: "Projects", href: "#projects" },
-    { name: "Contact Me", href: "#contact" },
+    { name: "Contact Me", href: "#contact-me" },
   ]
 
   const scrollToSection = (href) => {
@@ -43,7 +43,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <motion.div
-            className="text-2xl font-bold cursor-pointer font-mono"
+            className="text-2xl font-bold cursor-pointer font-special"
             onClick={() => scrollToSection("#home")}
           >
             AHD<span className="text-accent">.</span>

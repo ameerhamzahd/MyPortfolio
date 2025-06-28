@@ -1,6 +1,36 @@
 import { motion } from "motion/react"
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { SiCodeforces, SiHackerrank } from "react-icons/si";
 
 const Hero = () => {
+
+    const socialLinks = [
+        {
+            icon: FaLinkedin,
+            name: "LinkedIn",
+            url: "https://linkedin.com/in/ameerhamzah",
+            color: "#0077B5",
+        },
+        {
+            icon: FaGithub,
+            name: "GitHub",
+            url: "https://github.com/ameerhamzah",
+            color: "#333",
+        },
+        {
+            icon: SiCodeforces,
+            name: "Codeforces",
+            url: "https://codeforces.com/profile/ameerhamzah",
+            color: "#1F8ACB",
+        },
+        {
+            icon: SiHackerrank,
+            name: "HackerRank",
+            url: "https://hackerrank.com/ameerhamzah",
+            color: "#2EC866",
+        },
+    ]
+
     return (
         <section id="home" className="min-h-screen flex items-center justify-center pt-20 px-4 md:px-0">
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -11,23 +41,23 @@ const Hero = () => {
                     transition={{ duration: 0.8 }}
                     className="space-y-6"
                 >
-                    <motion.h2
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.4, duration: 0.8 }}
-                        className="text-2xl md:text-3xl text-white font-mono text-center lg:text-start"
-                    >
-                        Full Stack Developer
-                    </motion.h2>
-
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2, duration: 0.8 }}
-                        className="text-4xl md:text-6xl font-bold leading-tight text-center lg:text-start"
+                        className="text-4xl md:text-5xl font-bold leading-tight text-center lg:text-start"
                     >
-                        Hello, I'm <br /> <span className="text-accent font-mono">Ameer Hamzah Daiyan</span>
+                        Hello, I'm <br /> <span className="text-accent font-special">Ameer Hamzah Daiyan</span>
                     </motion.h1>
+
+                    <motion.h2
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.4, duration: 0.8 }}
+                        className="text-2xl md:text-3xl text-white font-special text-center lg:text-start"
+                    >
+                        Frontend Developer
+                    </motion.h2>
 
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
@@ -35,8 +65,7 @@ const Hero = () => {
                         transition={{ delay: 0.6, duration: 0.8 }}
                         className="text-lg max-w-lg mx-auto lg:mx-0 text-gray-300 text-center lg:text-start"
                     >
-                        Passionate about creating innovative web solutions and bringing ideas to life through clean, efficient code.
-                        I specialize in modern web technologies and love solving complex problems.
+                        Dedicated to building sleek, responsive interfaces that turn ideas into impactful user experiences.
                     </motion.p>
 
                     <motion.div
@@ -56,11 +85,36 @@ const Hero = () => {
                         <motion.button
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            onClick={() => document.querySelector("#contact").scrollIntoView({ behavior: "smooth" })}
+                            onClick={() => document.querySelector("#contact-me").scrollIntoView({ behavior: "smooth" })}
                             className="border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-black transition-colors duration-200 font-medium cursor-pointer"
                         >
                             Get In Touch
                         </motion.button>
+                    </motion.div>
+
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.8, duration: 0.8 }}
+                    >
+                        <div className="border-t-2 w-full border-t-gray-300 pt-5 flex flex-col items-center lg:items-start ">
+                            <h4 className="font-semibold text-gray-300 mb-4">Follow Me</h4>
+                            <div className="flex space-x-4">
+                                {socialLinks.map((social, index) => (
+                                    <motion.a
+                                        key={index}
+                                        whileHover={{ scale: 1.1, y: -2 }}
+                                        whileTap={{ scale: 0.95 }}
+                                        href={social.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="bg-accent p-3 rounded-full hover:bg-white transition-colors duration-200 text-black"
+                                    >
+                                        <social.icon className="text-xl" />
+                                    </motion.a>
+                                ))}
+                            </div>
+                        </div>
                     </motion.div>
                 </motion.div>
 

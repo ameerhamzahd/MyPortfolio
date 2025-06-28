@@ -23,7 +23,7 @@ const Education = () => {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold mb-4">Education</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold mb-4 font-special">Education</h2>
                     <div className="w-24 h-1 bg-accent mx-auto mb-6"></div>
                 </motion.div>
 
