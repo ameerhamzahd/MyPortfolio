@@ -5,6 +5,8 @@ import Hero from "./Components/Hero/Hero"
 import AboutMe from "./Components/AboutMe/AboutMe"
 import Skills from "./Components/Skills/Skills"
 import Education from "./Components/Education/Education"
+import Experience from "./Components/Experience/Experience"
+import Projects from "./Components/Projects/Projects"
 
 function App() {
 
@@ -17,6 +19,8 @@ function App() {
                     <AboutMe></AboutMe>
                     <Skills></Skills>
                     <Education></Education>
+                    <Experience></Experience>
+                    <Projects></Projects>
                 </main>
             </div>
         </Router>
