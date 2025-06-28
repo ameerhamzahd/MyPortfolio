@@ -1,17 +1,16 @@
-"use client"
-
 import { BrowserRouter as Router } from "react-router"
 import './App.css'
 import Navbar from './Components/Navbar/Navbar'
+import Hero from "./Components/Hero/Hero"
 
 function App() {
 
     return (
         <Router>
-            <div className="App bg-white text-black min-h-screen">
+            <div className="bg-black text-white min-h-screen">
                 <Navbar></Navbar>
                 <main>
-                    
+                    <Hero></Hero>
                 </main>
             </div>
         </Router>
