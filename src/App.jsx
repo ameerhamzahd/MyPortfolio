@@ -2,6 +2,7 @@ import { BrowserRouter as Router } from "react-router"
 import './App.css'
 import Navbar from './Components/Navbar/Navbar'
 import Hero from "./Components/Hero/Hero"
+import AboutMe from "./Components/AboutMe/AboutMe"
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
                 <Navbar></Navbar>
                 <main>
                     <Hero></Hero>
+                    <AboutMe></AboutMe>
                 </main>
             </div>
         </Router>
