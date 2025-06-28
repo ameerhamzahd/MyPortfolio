@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "motion/react"
 import { 
     FaReact, FaNodeJs, FaJsSquare, FaPython, FaGitAlt, FaHtml5, FaCss3Alt
 } from "react-icons/fa";
