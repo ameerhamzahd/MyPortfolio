@@ -10,7 +10,7 @@ const Experience = () => {
             company: "WearVault",
             period: "August 2024 - December 2024",
             location: "Remote",
-            description: "Leading development of enterprise web applications using React, Node.js, and cloud technologies.",
+            description: "Spearheading the creation of scalable, enterprise-level web applications using modern HTML, CSS, and JavaScript technologies.",
             responsibilities: [
                 "Developed responsive user interfaces using React, ensuring seamless experiences across mobile, tablet, and desktop devices.",
                 "Implemented product listing and filtering features for efficient product discovery and navigation.",

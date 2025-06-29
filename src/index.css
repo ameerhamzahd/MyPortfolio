@@ -6,3 +6,8 @@
 .font-special {
     font-family: "Orbitron", sans-serif;
 }
+
+html,
+body {
+    overflow-x: hidden;
+}

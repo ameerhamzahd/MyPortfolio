@@ -65,7 +65,7 @@ const ContactMe = () => {
         {
             icon: FaMapMarkerAlt,
             title: "Location",
-            value: "CDA Residential Area - Agrabad, Chittagong - 4100, Bangladesh",
+            value: "CDA R/A, Agrabad, Chittagong-4100, Bangladesh",
             link: null,
         },
     ];

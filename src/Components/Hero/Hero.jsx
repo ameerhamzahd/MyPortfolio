@@ -1,6 +1,6 @@
 import { motion } from "motion/react"
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
-import { SiCodeforces, SiHackerrank } from "react-icons/si";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import img from "../../assets/289692822_1673406476351837_5047881613524537209_n.jpg"
 
 const Hero = () => {
 
@@ -8,27 +8,13 @@ const Hero = () => {
         {
             icon: FaLinkedin,
             name: "LinkedIn",
-            url: "https://linkedin.com/in/ameerhamzah",
-            color: "#0077B5",
+            url: "https://www.linkedin.com/in/ameerhamzahd/",
         },
         {
             icon: FaGithub,
             name: "GitHub",
-            url: "https://github.com/ameerhamzah",
-            color: "#333",
-        },
-        {
-            icon: SiCodeforces,
-            name: "Codeforces",
-            url: "https://codeforces.com/profile/ameerhamzah",
-            color: "#1F8ACB",
-        },
-        {
-            icon: SiHackerrank,
-            name: "HackerRank",
-            url: "https://hackerrank.com/ameerhamzah",
-            color: "#2EC866",
-        },
+            url: "https://github.com/ameerhamzahd",
+        }
     ]
 
     return (
@@ -65,7 +51,7 @@ const Hero = () => {
                         transition={{ delay: 0.6, duration: 0.8 }}
                         className="text-lg max-w-lg mx-auto lg:mx-0 text-gray-300 text-center lg:text-start"
                     >
-                        Dedicated to building sleek, responsive interfaces that turn ideas into impactful user experiences.
+                        Specializing in crafting elegant, responsive interfaces that bring ideas to life through meaningful user experiences.
                     </motion.p>
 
                     <motion.div
@@ -98,7 +84,7 @@ const Hero = () => {
                         transition={{ delay: 0.8, duration: 0.8 }}
                     >
                         <div className="border-t-2 w-full border-t-gray-300 pt-5 flex flex-col items-center lg:items-start ">
-                            <h4 className="font-semibold text-gray-300 mb-4">Follow Me</h4>
+                            <h4 className="font-semibold text-gray-300 mb-5">Follow Me</h4>
                             <div className="flex space-x-4">
                                 {socialLinks.map((social, index) => (
                                     <motion.a
@@ -125,22 +111,22 @@ const Hero = () => {
                     transition={{ duration: 0.8 }}
                     className="flex justify-center lg:justify-end"
                 >
-                    <div className="relative">
+                    <div className="relative w-80 h-80">
+                        {/* Static Image */}
+                        <div className="w-full h-full rounded-full overflow-hidden border-4 border-accent">
+                            <img src={img} alt="Ameer Hamzah Daiyan" className="w-full h-full object-cover" />
+                        </div>
+
+                        {/* Animated Dashed Border */}
                         <motion.div
                             animate={{ rotate: 360 }}
-                            transition={{ duration: 20, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
-                            className="absolute inset-0 rounded-full border-4 border-black border-dashed"
-                            style={{ width: "320px", height: "320px" }}
+                            transition={{
+                                duration: 10,
+                                repeat: Number.POSITIVE_INFINITY,
+                                ease: "linear",
+                            }}
+                            className="absolute inset-0 rounded-full border-6 border-dashed border-black pointer-events-none"
                         />
-                        <motion.div
-                            className="relative w-80 h-80 rounded-full overflow-hidden border-4 border-accent"
-                        >
-                            <img
-                                src="/placeholder.svg?height=320&width=320"
-                                alt="Ameer Hamzah"
-                                className="w-full h-full object-cover"
-                            />
-                        </motion.div>
                     </div>
                 </motion.div>
             </div>

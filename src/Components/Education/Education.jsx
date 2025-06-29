@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from "motion/react"
-import { FaGraduationCap, FaCalendarAlt, FaMapMarkerAlt } from "react-icons/fa"
+import { FaGraduationCap, FaCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
+import varsityLogo from "../../assets/iiuc.png"
 
 const Education = () => {
 
@@ -44,7 +45,7 @@ const Education = () => {
                                 viewport={{ once: true }}
                                 className="inline-flex items-center justify-center w-20 h-20 bg-black text-white rounded-full mb-6"
                             >
-                                <FaGraduationCap className="text-3xl" />
+                                <img className='rounded-full scale-75' src={varsityLogo} alt="" />
                             </motion.div>
                             <h3 className="text-2xl md:text-3xl font-bold mb-2">{education.degree}</h3>
                             <h4 className="text-xl md:text-2xl font-semibold text-gray-400 mb-4">{education.institution}</h4>

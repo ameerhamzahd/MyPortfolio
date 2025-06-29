@@ -3,9 +3,10 @@ import {
     FaReact, FaNodeJs, FaJsSquare, FaPython, FaGitAlt, FaHtml5, FaCss3Alt
 } from "react-icons/fa";
 import { 
-    SiTailwindcss, SiMongodb, SiExpress, SiFirebase, SiFigma, SiCplusplus, SiDart, SiQt 
+    SiTailwindcss, SiMongodb, SiExpress, SiFigma, SiCplusplus, SiDart, SiQt 
 } from "react-icons/si";
 import { DiMsqlServer } from "react-icons/di";
+import { IoLogoFirebase } from "react-icons/io5";
 
 const Skills = () => {
 
@@ -15,7 +16,7 @@ const Skills = () => {
         { name: "Dart", icon: SiDart, color: "#0175C2" },
         { name: "Express.js", icon: SiExpress, color: "#000000" },
         { name: "Figma", icon: SiFigma, color: "#F24E1E" },
-        { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
+        { name: "Firebase", icon: IoLogoFirebase, color: "#FFCA28" },
         { name: "Git", icon: FaGitAlt, color: "#F05032" },
         { name: "HTML5", icon: FaHtml5, color: "#E34F26" },
         { name: "JavaScript", icon: FaJsSquare, color: "#F7DF1E" },
