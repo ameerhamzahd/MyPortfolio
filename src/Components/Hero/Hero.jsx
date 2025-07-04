@@ -106,28 +106,55 @@ const Hero = () => {
 
                 {/* Right Content - Profile Image */}
                 <motion.div
-                    initial={{ opacity: 0, x: 50 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.8 }}
+                    initial={{ opacity: 0, x: 50, filter: "blur(8px)" }}
+                    animate={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+                    transition={{ duration: 1, delay: 0.6 }}
                     className="flex justify-center lg:justify-end"
                 >
                     <div className="relative w-80 h-80">
-                        {/* Static Image */}
-                        <div className="w-full h-full rounded-full overflow-hidden border-4 border-accent">
-                            <img src={img} alt="Ameer Hamzah Daiyan" className="w-full h-full object-cover" />
+                        <div className="absolute inset-0 flex items-center justify-center">
+                            <div className="p-2 w-full h-full rounded-full overflow-hidden">
+                                <img
+                                    src={img}
+                                    alt="Ameer Hamzah Daiyan"
+                                    className="w-full h-full object-cover rounded-full mix-blend-lighten"
+                                />
+                            </div>
                         </div>
 
-                        {/* Animated Dashed Border */}
-                        <motion.div
-                            animate={{ rotate: 360 }}
-                            transition={{
-                                duration: 10,
-                                repeat: Number.POSITIVE_INFINITY,
-                                ease: "linear",
-                            }}
-                            className="absolute inset-0 rounded-full border-6 border-dashed border-black pointer-events-none"
-                        />
+                        <motion.svg
+                            className="absolute inset-0 w-full h-full shadow-xl rounded-full text-accent"
+                            fill="transparent"
+                            viewBox="0 0 506 506"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <motion.circle
+                                cx="253"
+                                cy="253"
+                                r="250"
+                                stroke="currentColor"
+                                strokeWidth="4"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                initial={{ strokeDasharray: "24 10 0 0" }}
+                                animate={{
+                                    strokeDasharray: [
+                                        "15 120 25 25",
+                                        "16 25 92 72",
+                                        "4 250 22 22",
+                                    ],
+                                    rotate: [120, 360],
+                                }}
+                                transition={{
+                                    duration: 20,
+                                    repeat: Infinity,
+                                    repeatType: "reverse",
+                                }}
+                            />
+                        </motion.svg>
+
                     </div>
+
                 </motion.div>
             </div>
         </section>
