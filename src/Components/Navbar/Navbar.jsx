@@ -38,7 +38,7 @@ const Navbar = () => {
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? "bg-black shadow-lg" : "bg-transparent"
         }`}
     >
-      <div className="navbar max-w-7xl mx-auto px-4 lg:px-0">
+      <div className="navbar max-w-7xl mx-auto px-4">
         {/* Logo */}
         <motion.div
           whileTap={{ scale: 0.95 }}
@@ -63,7 +63,7 @@ const Navbar = () => {
             ))}
             <motion.li whileTap={{ scale: 0.95 }}>
               <a
-                href="https://drive.google.com/file/d/106px2xZ1aJ7XU0MkXoFvfQPCbBbZNNMD/view?usp=sharing"
+                href="https://drive.google.com/file/d/1qxiYBtI4LWGEPQM4dv5nDDenpShD2FgN/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
                 className="btn btn-sm xl:btn-md bg-white text-black border-none hover:bg-accent transition-colors duration-200 font-medium px-8 py-3"
@@ -133,7 +133,7 @@ const Navbar = () => {
               ))}
               <motion.li whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                 <a
-                  href="https://drive.google.com/file/d/106px2xZ1aJ7XU0MkXoFvfQPCbBbZNNMD/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1qxiYBtI4LWGEPQM4dv5nDDenpShD2FgN/view?usp=sharing"
                   target="_blank"
                   rel="noreferrer"
                   className="btn w-11/12 mx-auto bg-black text-white hover:bg-accent transition-colors duration-200 rounded-full font-medium mt-5"

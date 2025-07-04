@@ -1,6 +1,6 @@
 import { motion } from "motion/react"
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import img from "../../assets/289692822_1673406476351837_5047881613524537209_n.jpg"
+import img from "../../assets/IMG_1911.JPG"
 
 const Hero = () => {
 
